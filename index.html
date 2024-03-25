@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="layout">
+
+    <header>
+      <a href="#colors">Cores e Fundos</a>
+      <a href="#texts">Textos</a>
+      <a href="#layouts">Layout</a>
+      <a href="#images">Imagens</a>
+      <a href="#links">Estilos</a>
+      <a href="">Responsividade</a>
+      <a href="">Animações</a>
+      <a href="">Consistência</a>
+    </header>
+    <div id="fake-header"></div>
+    <main>
+      <h1>
+        Atividade Avaliativa ✏️</h1>
+
+      <article id="colors">
+        <h2>Cores e Fundos 🟢⚫🟠</h2>
+        <p>As cores e fundos são fundamentais para darem vida às páginas web, podendo serem aplicadas através das tags
+          CSS <span class="color">color</span> e <span class="background">background</span>.</p>
+        <div id="test">
+          <div class="example">
+            <div class="box">Caixa</div>
+            <h3> #box { <br />
+              color: <span class="color"> #84b6f4 </span><br />
+              background-color: <span class="background"> #77dd77</span>
+              <br />
+              }
+            </h3>
+          </div>
+          <div class="example">
+            <div class="box img">Caixa</div>
+            <h3> #box { <br />
+              color: <span class="color"> #84b6f4 </span><br />
+              background-image: <span class="background"> url("cartoon.png")</span>
+              <br />
+              }
+            </h3>
+          </div>
+        </div>
+      </article>
+
+      <article id="texts">
+        <h2>Textos ✍</h2>
+        <p>Os textos em HTML são essenciais para inserir informações nas aplicações web, e possuem diferentes tags para
+          caracterizar diferentes tipos de textos. Dentre essas tags, as principais são:
+        </p>
+
+        <div class="textos">
+          <h3><span class="tags">&lt;p&gt;&lt;/p&gt;</span> 👉 Principal tag de texto, usada para escrever parágrafos.
+          </h3>
+        </div>
+
+        <div class="textos">
+          <h3><span class="tags"> &lt;span&gt;&lt;/span&gt;</span> 👉 Usada normalmente para pequenas informações, como
+            legendas. Também usada para fazer containers in-line.
+          </h3>
+        </div>
+        <div class="textos">
+          <h3><span class="tags">&lt;i&gt;&lt;/i&gt;</span> 👉 Usada para transformar o conteúdo em
+            <i>itálico</i>.
+          </h3>
+        </div>
+        <div class="textos">
+          <h3><span class="tags">&lt;b&gt;&lt;/b&gt;</span> 👉 Usada para transformar o conteúdo em
+            <b>negrito</b>.
+          </h3>
+        </div>
+        <div class="textos">
+          <h3><span class="tags"> &lt;br/&gt;</span> 👉 Usada para a função de quebra de linha.
+          </h3>
+        </div>
+      </article>
+
+      <article id="layouts">
+        <h2>Layout e Posicionamento 🔳</h2>
+        <p>O layout é parte essencial de toda estrutura web, pois é através dele que as informacões são dispostas e
+          organizadas na tela, de forma que o usuário possa visuálizá-las da melhor forma possível.
+        </p>
+
+        <div class="grid-container">
+          <div class="item1">Header</div>
+          <div class="item2">Menu</div>
+          <div class="item3">Main</div>
+          <div class="item4">Article</div>
+          <div class="item5">Footer</div>
+        </div>
+      </article>
+
+      <article id="images">
+        <h2>Imagens 🖼️</h2>
+        <p>As imagens são usadas nos sites para representar elementos, paisagens e milhares de outras coisas. Podem ser
+          usadas através da tag &lt;img&gt;.
+        </p>
+        <div class="imgs">
+          <img
+            src="https://images.unsplash.com/photo-1531214159280-079b95d26139?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="">
+
+          <img
+            src="https://images.unsplash.com/photo-1515041219749-89347f83291a?q=80&w=1674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="">
+          <img
+            src="https://images.unsplash.com/photo-1524481905007-ea072534b820?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="">
+        </div>
+      </article>
+
+
+      <article id="links">
+        <h2>Estilos para Links 🎀</h2>
+        <p>Os links, através da tag &lt;a&gt;, no geral, são muito utilizados para inserção de hyperlinks à nossa página
+          web, através de textos, imagens e botões. Sua principal função é destinar o usuário para algum lugar. No caso
+          do menu deste site, a função da tag é lhe direcionar para as diferentes sessões. No CSS, é possível estilizar
+          a decoração de um &lt;a&gt;:
+        </p>
+        <div class="textos">
+          <h3><span class="links">text-decoration</span> 👉 Define o estilo do sublinhado do &lt;a&gt;.
+          </h3>
+        </div>
+        <div class="textos">
+          <h3><span class="links">color</span> 👉 Define a cor do &lt;a&gt;.
+          </h3>
+        </div>
+        <p>Também é possivel definir seu estilo em relação às suas quatro fases:</p>
+        <div class="textos">
+          <h3><span class="links">a:link</span> 👉 Define o estilo do <a
+              href="https://www.w3schools.com/html/html_links.asp">link</a> no estado inicial.
+          </h3>
+        </div>
+        <div class="textos">
+          <h3><span class="links">a:visited</span> 👉 Define o estilo do <a
+              href="https://www.w3schools.com/html/html_links.asp">link</a> visitado.
+          </h3>
+        </div>
+        <div class="textos">
+          <h3><span class="links">a:hover</span> 👉 Define o estilo do <a
+              href="https://www.w3schools.com/html/html_links.asp">link</a> quando passa-se o mouse sobre
+            ele.
+          </h3>
+        </div>
+        <div class="textos">
+          <h3><span class="links">a:active</span> 👉 Define o estilo do <a
+              href="https://www.w3schools.com/html/html_links.asp">link</a> ativo (o que foi "clicado").
+          </h3>
+        </div>
+      </article>
+
+      <article id="layout">
+        <h2>Responsividade 📱</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aspernatur repellendus eos, accusamus, maxime
+          cupiditate incidunt repellat iusto in placeat fuga blanditiis obcaecati quaerat, quod facilis aliquid odit.
+          Non, ut.
+        </p>
+      </article>
+
+      <article id="layout">
+        <h2>Animações 🪐</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aspernatur repellendus eos, accusamus, maxime
+          cupiditate incidunt repellat iusto in placeat fuga blanditiis obcaecati quaerat, quod facilis aliquid odit.
+          Non, ut.
+        </p>
+        <div id="box-animation"></div>
+      </article>
+  </div>
+
+
+
+
+  </main>
+  </div>
+</body>
+
+</html>
