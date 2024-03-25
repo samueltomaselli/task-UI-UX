@@ -7,7 +7,7 @@
 }
 
 body {
-  width: full;
+  width: auto;
   min-height: screen;
   display: flex;
   flex-direction: column;
@@ -17,7 +17,7 @@ body {
 }
 
 #layout {
-  width: 1080px;
+  max-width: 1080px;
   background-color: #f3f4f6;
 }
 
@@ -27,7 +27,7 @@ body {
 }
 
 header {
-  padding: 0px;
+  padding: 2px;
   height: 80px;
   display: flex;
   justify-content: space-between;
@@ -37,6 +37,10 @@ header {
   width: 1080px;
   position: fixed;
   background-color: #f3f4f6;
+}
+
+header a {
+  text-decoration: none;
 }
 
 a {
@@ -120,7 +124,7 @@ h3 {
   justify-content: space-between;
 }
 
-.textos {
+.texts {
   display: flex;
   justify-content: start;
   gap: 10px;
@@ -172,7 +176,7 @@ h3 {
 }
 
 img {
-  width: 300px;
+  width: 350px;
   height: 300px;
   border: 2px solid black;
 }
@@ -188,11 +192,11 @@ img {
 }
 
 div h3 a:hover {
-  color: blue;
+  color: purple;
 }
 
 div h3 a:visited {
-  color: purple;
+  color: grey;
 }
 
 div h3 a:active {
@@ -200,13 +204,13 @@ div h3 a:active {
 }
 
 div h3 a:link {
-  color: yellow;
+  color: blue;
 }
 
 #box-animation {
   margin-top: 30px;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   background: #000;
   animation: growing 1.5s alternate infinite ease-in;
@@ -218,7 +222,28 @@ div h3 a:link {
     background-color: #77dd77;
   }
   100% {
-    transform: scale(1.5);
+    transform: scale(1.2);
     background-color: #84b6f4;
   }
+}
+
+#example-animation {
+  font-size: 15px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#responsivity img {
+  width: 500px;
+}
+
+#consistency img {
+  width: 500px;
+}
+
+h5 {
+  font-size: 15px;
+  font-weight: 500;
 }

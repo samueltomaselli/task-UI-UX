@@ -14,17 +14,17 @@
 
 <body>
   <div id="layout">
-
     <header>
       <a href="#colors">Cores e Fundos</a>
       <a href="#texts">Textos</a>
       <a href="#layouts">Layout</a>
       <a href="#images">Imagens</a>
       <a href="#links">Estilos</a>
-      <a href="">Responsividade</a>
-      <a href="">Animações</a>
-      <a href="">Consistência</a>
+      <a href="#responsivity">Responsividade</a>
+      <a href="#animations">Animações</a>
+      <a href="#consistency">Consistência</a>
     </header>
+ 
     <div id="fake-header"></div>
     <main>
       <h1>
@@ -62,27 +62,27 @@
           caracterizar diferentes tipos de textos. Dentre essas tags, as principais são:
         </p>
 
-        <div class="textos">
+        <div class="texts">
           <h3><span class="tags">&lt;p&gt;&lt;/p&gt;</span> 👉 Principal tag de texto, usada para escrever parágrafos.
           </h3>
         </div>
 
-        <div class="textos">
+        <div class="texts">
           <h3><span class="tags"> &lt;span&gt;&lt;/span&gt;</span> 👉 Usada normalmente para pequenas informações, como
             legendas. Também usada para fazer containers in-line.
           </h3>
         </div>
-        <div class="textos">
+        <div class="texts">
           <h3><span class="tags">&lt;i&gt;&lt;/i&gt;</span> 👉 Usada para transformar o conteúdo em
             <i>itálico</i>.
           </h3>
         </div>
-        <div class="textos">
+        <div class="texts">
           <h3><span class="tags">&lt;b&gt;&lt;/b&gt;</span> 👉 Usada para transformar o conteúdo em
             <b>negrito</b>.
           </h3>
         </div>
-        <div class="textos">
+        <div class="texts">
           <h3><span class="tags"> &lt;br/&gt;</span> 👉 Usada para a função de quebra de linha.
           </h3>
         </div>
@@ -130,61 +130,81 @@
           do menu deste site, a função da tag é lhe direcionar para as diferentes sessões. No CSS, é possível estilizar
           a decoração de um &lt;a&gt;:
         </p>
-        <div class="textos">
+        <div class="texts">
           <h3><span class="links">text-decoration</span> 👉 Define o estilo do sublinhado do &lt;a&gt;.
           </h3>
         </div>
-        <div class="textos">
+        <div class="texts">
           <h3><span class="links">color</span> 👉 Define a cor do &lt;a&gt;.
           </h3>
         </div>
         <p>Também é possivel definir seu estilo em relação às suas quatro fases:</p>
-        <div class="textos">
+        <div class="texts">
           <h3><span class="links">a:link</span> 👉 Define o estilo do <a
               href="https://www.w3schools.com/html/html_links.asp">link</a> no estado inicial.
           </h3>
         </div>
-        <div class="textos">
+        <div class="texts">
           <h3><span class="links">a:visited</span> 👉 Define o estilo do <a
               href="https://www.w3schools.com/html/html_links.asp">link</a> visitado.
           </h3>
         </div>
-        <div class="textos">
+        <div class="texts">
           <h3><span class="links">a:hover</span> 👉 Define o estilo do <a
               href="https://www.w3schools.com/html/html_links.asp">link</a> quando passa-se o mouse sobre
             ele.
           </h3>
         </div>
-        <div class="textos">
+        <div class="texts">
           <h3><span class="links">a:active</span> 👉 Define o estilo do <a
               href="https://www.w3schools.com/html/html_links.asp">link</a> ativo (o que foi "clicado").
           </h3>
         </div>
       </article>
 
-      <article id="layout">
+      <article id="responsivity">
         <h2>Responsividade 📱</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aspernatur repellendus eos, accusamus, maxime
-          cupiditate incidunt repellat iusto in placeat fuga blanditiis obcaecati quaerat, quod facilis aliquid odit.
-          Non, ut.
+        <p>A responsividade nas páginas web permite que o conteúdo se ajuste de maneira correta e proporcional aos diferentes tamanhos de tela, garantindo uma experiência consistente e agradável para os usuários, independentemente do dispositivo que estão usando.
         </p>
+        <img src="https://arquivo.devmedia.com.br/artigos/Ricardo_Arrigoni/Responsive-Design/Responsive-Design2.jpg" alt="">
+        <h5><b>Figura:</b> Resoluções mais frequentes.</h5>
       </article>
 
-      <article id="layout">
-        <h2>Animações 🪐</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aspernatur repellendus eos, accusamus, maxime
-          cupiditate incidunt repellat iusto in placeat fuga blanditiis obcaecati quaerat, quod facilis aliquid odit.
-          Non, ut.
+      <article id="animations">
+        <h2>Animações e Transições 🪐</h2>
+        <p>As animações em CSS permitem que você adicione movimento e interatividade aos elementos de suas páginas da web. Com CSS, através dos KeyFrames, você tem acesso a uma variedade de propriedades que permitem criar animações sem a necessidade de JavaScript.
         </p>
-        <div id="box-animation"></div>
+        <div id="example-animation"> 
+          <div id="box-animation"></div>
+          <h3> #box-animation { <br />
+            animation: <span class="color"> growing 1.5s alternate infinite ease-in </span>;<br />
+            }
+          </h3>
+          <h3> @keyframes growing { <br />
+            &nbsp;&nbsp; 0% { <br>
+              transform:  <span class="color">scale(0.8)</span> ; <br>
+              background-color: <span class="color">#77dd77</span>; <br>
+              &nbsp;&nbsp;  } <br>
+              &nbsp; &nbsp; 100% { <br>
+              transform: <span class="color">scale(1.2)</span>; <br>
+              background-color: <span class="color">#84b6f4</span>; <br>
+              &nbsp;&nbsp; } <br>
+          }
+          </h3>
+        </div>
       </article>
+ 
+      <article id="consistency">
+        <h2>Consistência 🧱</h2>
+        <p>A consistência é um fator fundamental na construção de qualquer página, e ela se traduz no uso constante e padronizado de tamanhos, cores, fontes e layouts em uma estrutura web, de modo a representar ao usuário uma estilização uniforme e homogênea do início ao fim.
+        </p>
+        <img src="https://miro.medium.com/v2/resize:fit:2000/format:webp/1*1IFmQ3lGmlOw8JMkW1R8cQ.png" alt="">
+        <h5><b>Figura:</b> Exemplo de página consistente.</h5>
+      </article> 
   </div>
-
-
-
 
   </main>
   </div>
 </body>
 
-</html>
+</html> 
